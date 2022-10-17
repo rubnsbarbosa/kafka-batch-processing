@@ -6,6 +6,7 @@ public class ProducerApp {
 
     public static void main(String[] args) {
         KafkaDataProducer producer = new KafkaDataProducer(TOPIC, KAFKA_BOOTSTRAP_SERVER);
+        producer.startSendMessage();
     }
 
 }
